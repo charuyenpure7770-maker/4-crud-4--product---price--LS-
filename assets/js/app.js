@@ -89,6 +89,7 @@ function onUpdate(eve){
     let td = document.getElementById(UPDATE_ID).children;
    td[1].innerText = productControl.value;
    td[2].innerText =  priceControl.value;
+   localStorage.setItem("productArr",JSON.stringify(productArr));
     submit.classList.remove('d-none')
     update.classList.add('d-none')
     h1.classList.remove('d-none')
